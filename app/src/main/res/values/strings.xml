@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NgajiKuy</string>
+    <string name="nama_masjid">Nama Masjid</string>
+    <string name="alamat_masjid">Alamat Masjid</string>
+    <string name="lihat_detail">Lihat Detail</string>
+    <string name="jadwal_kajian">Jadwal Kajian</string>
+    <string name="pemateri">Pemateri</string>
+    <string name="nama_ustadz">Nama ustadz</string>
+    <string name="materi">Materi</string>
+    <string name="nama_materi">Nama Materi</string>
+    <string name="waktu_materi">Waktu Materi</string>
+    <string name="about">About</string>
+    <string name="nama_pribadi">Nugroho Adi Pratomo</string>
+    <string name="email">nugrohoadi.pratomo24@gmail.com</string>
+</resources>

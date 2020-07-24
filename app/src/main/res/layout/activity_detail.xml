@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/foto_masjid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@color/colorAccent"/>
+        </FrameLayout>
+
+        <TextView
+            style="@style/Details"
+            android:id="@+id/tv_nama_masjid"
+            android:textSize="30sp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:text="@string/nama_masjid"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            style="@style/Details"
+            android:id="@+id/tv_alamat_masjid"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:lineSpacingMultiplier="1"
+            android:text="@string/alamat_masjid"/>
+
+        <TextView
+            style="@style/Details.Subtitle"
+            android:text="@string/jadwal_kajian"
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="8dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/Ustadz.Field"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/materi"/>
+
+                <TextView
+                    style="@style/Ustadz.Value"
+                    android:id="@+id/tv_materi"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="@string/nama_materi"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/Ustadz.Field"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/pemateri"/>
+
+                <TextView
+                    style="@style/Ustadz.Value"
+                    android:id="@+id/tv_pemateri"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="@string/nama_ustadz"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/Ustadz.Field"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="Waktu"/>
+
+                <TextView
+                    style="@style/Ustadz.Value"
+                    android:id="@+id/tv_waktu"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="@string/waktu_materi"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
